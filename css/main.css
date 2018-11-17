@@ -1,0 +1,157 @@
+html {
+    font-size: 100%; /* keep */
+    box-sizing: border-box; /* keep */
+}
+* {
+    box-sizing: inherit; /* keep */
+}
+body {
+    font-family: 'Josefin Slab', 'Times New Roman', serif;
+    color: #000; /* keep */
+    margin: 0; /* keep */
+    background: #b2988a;
+}
+h1 {
+    font-family: 'Anton', 'Arial Black', sans-serif;
+}
+img {
+    display: block; /* keep */
+    width: 100%; /* keep */
+}
+
+#container {
+    max-width: 1000px; /* keep */
+    margin: auto; /* keep */
+    display: grid; /* keep */
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+        "header header header header header"
+        "intro intro intro intro intro"
+        "taylorswift fearless speaknow red beats"
+        "footer footer footer footer footer";
+}
+header {
+    grid-area: header;
+    background: #fff; /* keep */
+    padding: 1rem;
+    padding-bottom: 0rem;
+    margin: 0rem;
+}
+#intro {
+    grid-area: intro;
+    background: #fff; /* keep */
+    padding: 1rem;
+    margin: 0rem;
+}
+#taylorswift {
+    grid-area: taylorswift;
+    background: #fff; /* keep */
+    margin: 0rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+#fearless {
+    grid-area: fearless;
+    background: #fff; /* keep */
+    margin: 0rem;
+    padding-bottom: 1rem;
+}
+#speaknow {
+    grid-area: speaknow;
+    background: #fff; /* keep */
+    margin: 0rem;
+    padding-bottom: 1rem;
+}
+#red {
+    grid-area: red;
+    background: #fff; /* keep */
+    margin: 0rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+#beats {
+    grid-area: beats;
+    background: #fff; /* keep */
+    margin: 0rem;
+}
+#beats p {
+  font-size: 150%;
+  font-style: oblique;
+}
+footer {
+    grid-area: footer; /* keep */
+    background: #000; /* keep */
+    text-align: center;
+    color: #fff;
+}
+
+
+
+@media screen and (max-width: 830px) {
+  #container {
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+        "header header header header"
+        "intro intro intro intro"
+        "taylorswift fearless speaknow red"
+        "beats beats beats beats"
+        "footer footer footer footer";
+    }
+    header {
+        grid-area: header;
+        background: #fff; /* keep */
+        padding: 1rem;
+        padding-bottom: 0rem;
+        margin: 0rem;
+    }
+    #intro {
+        grid-area: intro;
+        background: #fff; /* keep */
+        padding: 1rem;
+        margin: 0rem;
+    }
+    #taylorswift {
+        grid-area: taylorswift;
+        background: #fff; /* keep */
+        margin: 0rem;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+    }
+    #fearless {
+        grid-area: fearless;
+        background: #fff; /* keep */
+        margin: 0rem;
+        padding-bottom: 1rem;
+    }
+    #speaknow {
+        grid-area: speaknow;
+        background: #fff; /* keep */
+        margin: 0rem;
+        padding-bottom: 1rem;
+    }
+    #red {
+        grid-area: red;
+        background: #fff; /* keep */
+        margin: 0rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+    }
+    #beats {
+        grid-area: beats;
+        background: #fff; /* keep */
+        margin: 0rem;
+        padding-left: 1rem;
+    }
+    #beats p {
+      font-size: 125%;
+      font-style: oblique;
+    }
+    footer {
+        grid-area: footer; /* keep */
+        background: #000; /* keep */
+        text-align: center;
+        color: #fff;
+      }
+    }
